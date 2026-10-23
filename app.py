@@ -9,7 +9,7 @@ app.config["SECRET_KEY"] = "classroom-demo-secret"
 
 socketio = SocketIO(app)
 
-@app.router("/")
+@app.route("/")
 def home():
   return render_template("index.html")
 
